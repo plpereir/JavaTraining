@@ -1,9 +1,14 @@
 package com.aulas.model;
 
-public  class Funcionario {
+public class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
+	
+	public Funcionario(String nome) {
+		this.setNome(nome);
+	}
+	
 	
 	public String getNome() {
 		return nome;

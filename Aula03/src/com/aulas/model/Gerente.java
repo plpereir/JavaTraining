@@ -1,6 +1,13 @@
 package com.aulas.model;
 
 public class Gerente extends Funcionario{
+	
+	public Gerente(String nome, String cpf) {
+		super(nome);
+		this.setCpf(cpf);
+		// TODO Auto-generated constructor stub
+	}
+
 	/* vamos aplicar herança
 	private String nome;
 	private String cpf;
@@ -29,6 +36,9 @@ public class Gerente extends Funcionario{
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}*/
+	
+	
+	
 	public int getSenha() {
 		return senha;
 	}
@@ -55,7 +65,7 @@ public boolean autentica(int senha) {
 
 @Override
 public double getBonificacao() {
-	return (this.getSalario() * 0.15)+this.getSalario();
+	return (this.getSalario() * 0.15)+this.getSalario()*2;
 }
 	
 }
