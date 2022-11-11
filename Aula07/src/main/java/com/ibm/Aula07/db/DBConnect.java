@@ -34,9 +34,9 @@ public class DBConnect {
         try {
             CloudantClient cloudantClient = ClientBuilder
                     .url(new URL(
-                            "https://0d285142-816e-456a-99bd-402d77c77271-bluemix.cloudantnosqldb.appdomain.cloud"))
-                    .username("apikey-v2-2u0wbfvxe7lm4db5bafb4q1rmz1m5n3ipdbhfvpusyx9")
-                    .password("bfa61e024f405566b2a21b7a78c0dc21")
+                            "https://xxxx"))
+                    .username("apikey-xxxx")
+                    .password("xxxx")
                     .build();
             return cloudantClient;
         } catch (MalformedURLException e) {
